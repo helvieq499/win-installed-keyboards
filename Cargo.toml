@@ -1,0 +1,22 @@
+[package]
+name = "win-installed-keyboards"
+version = "0.1.0"
+description = "Provides a list of installed keyboards for Windows systems"
+edition = "2021"
+repository = "https://github.com/helvieq499/win-installed-keyboards"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["windows", "keyboard"]
+categories = ["api-bindings", "os::windows-apis"]
+
+[dependencies]
+enum-primitive-derive = "0.2.2"
+num-traits = "0.2.15"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.winapi]
+version = "0.3"
+features = [
+    "winuser"
+]
